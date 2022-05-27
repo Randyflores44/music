@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['ABMB', 'DOY', 'Stolen'];
+const songs = ['When God Made You', "I'll Be There", 'My Whole World'];
 
 // Keep track of song
 let songIndex = 0;
@@ -23,7 +23,7 @@ loadSong(songs[songIndex]);
 // Update song details
 function loadSong(song) {
   title.innerText = song;
-  audio.src = `music/${song}.mp3`;
+  audio.src = `music/${song}.ogg`;
   cover.src = `images/${song}.jpg`;
 }
 
